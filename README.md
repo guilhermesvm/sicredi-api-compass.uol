@@ -12,7 +12,7 @@ Olá! Este será um repositório dedicado para alocar o projeto de automação d
 
 # Challenge Final - API Simulação de Crédito Sicredi
 <div align="center">
-    <img src="https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo.png" width="400px" height="260px">
+    <img src="https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo.png" width="300px" height="160px">
 </div>
 - [Branch Main](https://gitlab.com/guilhermesm/compass-challenge-final) - Projeto base; <br>
 - [Branch Dev](https://gitlab.com/guilhermesm/compass-challenge-final/-/tree/dev?ref_type=heads) - Commits e atualizações.
