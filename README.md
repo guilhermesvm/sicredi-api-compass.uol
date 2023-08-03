@@ -4,11 +4,11 @@
  </h1>
 </div>
 Olá! Este será um repositório dedicado para alocar o projeto de automação de testes da [API Sicredi](https://github.com/desafios-qa-automacao/desafio-sicredi). <br>
-- Docker;
-- CI/CD com GitLab;
-- Execução de testes em containers;
-- Execução de testes em ambiente de integração contínua;
-- Implementação do Challenge Final: [AP Sicredi](https://github.com/desafios-qa-automacao/desafio-sicredi)
+- Docker; <br>
+- CI/CD com GitLab; <br>
+- Execução de testes em containers;<br>
+- Execução de testes em ambiente de integração contínua; <br>
+- Implementação do Challenge Final: [AP Sicredi](https://github.com/desafios-qa-automacao/desafio-sicredi).<br>
 
 # Challenge Final - API Simulação de Crédito Sicredi
 - [Branch Main](https://gitlab.com/guilhermesm/compass-challenge-final) - Projeto base; <br>
