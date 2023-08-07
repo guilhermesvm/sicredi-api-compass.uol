@@ -8,7 +8,7 @@ Olá! Este será um repositório dedicado para alocar o projeto de automação d
 - CI/CD com GitLab; <br>
 - Execução de testes em containers;<br>
 - Execução de testes em ambiente de integração contínua; <br>
-- Implementação do Challenge Final: [AP Sicredi](https://github.com/desafios-qa-automacao/desafio-sicredi).<br>
+- Implementação do Challenge Final: [API Sicredi](https://github.com/desafios-qa-automacao/desafio-sicredi).<br>
 
 # Challenge Final - API Simulação de Crédito Sicredi
 - [Branch Main](https://gitlab.com/guilhermesm/compass-challenge-final) - Projeto base; <br>
