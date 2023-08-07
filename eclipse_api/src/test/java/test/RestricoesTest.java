@@ -13,31 +13,31 @@ import services.BaseTest;
 public class RestricoesTest extends BaseTest{
  
 	@Test
-	public void ListarCPFSemRestricao() {
+	public void listarCPFSemRestricao() {
 		Response response = rest.getCPF(RESTRICOES, "66414919004");
 		assertThat(response.statusCode(), is(204));	
 	}
 	
 	@Test
-	public void ListarCPFInvalidoMELHORIA() {
+	public void naoListarCPFInvalidoMELHORIA() {
 		Response response = rest.getCPF(RESTRICOES, "ABVX45462DF54524FCV");
 		assertThat(response.statusCode(), is(204));
 	}
 	
 	@Test
-	public void ListarCPFForaDosPadroesMELHORIA() {
+	public void naoListarCPFForaDosPadroesMELHORIA() {
 		Response response = rest.getCPF(RESTRICOES, "664149190045256475687453465756856745345");
 		assertThat(response.statusCode(), is(204));
 	}
 	
 	@Test
-	public void ListarCPFNaoExistenteNoBancoDeDados() {
+	public void naoListarCPFNaoExistenteNoBancoDeDados() {
 		Response response = rest.getCPF(RESTRICOES, "04912851086");
 		assertThat(response.statusCode(), is(204));	
 	}
 	
 	@Test
-	public void ListarCPFComRestricaoBase() {
+	public void listarCPFComRestricaoBase() {
 		Response response = rest.getCPF(RESTRICOES, "97093236014");
 		assertThat(response.statusCode(), is(200));
 		assertThat(response.asString(), containsString("mensagem"));

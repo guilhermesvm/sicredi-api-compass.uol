@@ -43,12 +43,12 @@ public class BaseRest {
 		;		
 	}
 	
-	public Response post(String endpoint, Object user) {
+	public Response post(String endpoint, Object sim) {
 		return
 		given()
-			.body(user)
+			.body(sim)
 		.when()
-			.get(endpoint)
+			.post(endpoint)
 		.then()
 			.log().all()
 			.body(is(not(nullValue())))
@@ -74,7 +74,7 @@ public class BaseRest {
 		;
 	}
 		
-	public Response delete(String endpoint, String id) {
+	public Response delete(String endpoint, Integer id) {
 		return
 		given()
 			.pathParam("id", id)
