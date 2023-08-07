@@ -79,26 +79,27 @@
 - Valor é obrigatório. Valor inteiro (integer) informado deverá ser maior ou igual a R$1000.00 e menor ou igual a R$40000.00
 - Parcela é obrigatório. Número de parcelas de pagamento inteiro (integer) deverá ser maior ou igual a 2 e menor ou igual a 48;
 - Seguro é obrigatório. Booleano deverá ser true, com seguro, ou false, sem seguro.
-
-### **Testes Candidatos à Automação**
+- Clientes que já possuem CPF com simulaçãocadastrada não poderão realizar outras simulações;
 
 ###  **Casos de Teste**
 - CT_001: Listar simulações;
-- CT_002: Listar simulação por CPF existente sem restrição;
-- CT_003: Listar simulação por CPF existente com restrição;
+- CT_002: Listar simulação por CPF existente;
 - CT_004: Listar simulação por CPF inexistente;
-- CT_005: Listar simulação por CPF fora dos padrões;
-- CT_006: Listar simulação por CPF com caracteres inválidos;
+- CT_005: Listar simulação por CPF fora dos padrões (menor ou maior que 11 dígitos);
+- CT_006: Listar simulação por CPF com caracteres inválidos (letra ou caracteres especiais);
 - CT_007: Criar simulação com TODOS os campos preenchidos corretamente;
-- CT_008: Criar simulação com ALGUNS/TODOS campos em branco;
-- CT_009: Criar simulação com ALGUNS/TODOS campos vazios;
-- CT_010: Criar simulação utilizando caracteres inválidos (especiais) em ALGUNS/TODOS os campos;
-- CT_011: Criar simulação com "CPF" inválido;
-- CT_012: Criar simulação com "nome" inválido;
+- CT_008: Criar simulação com ALGUNS campos em branco;
+- CT_008: Criar simulação com "nome" e "cpf" em branco;
+- CT_009: Criar simulação com ALGUNS campos vazios;
+- CT_008: Criar simulação com "nome" e "cpf" vazios;
+- CT_010: Criar simulação utilizando caracteres inválidos (especiais) em ALGUNS os campos;
+- CT_010: Criar simulação com CPF inválido (string e com caracteres especiais);
 - CT_013: Criar simulação com "email" sem o '@', para verificar o padrão válido de email;
-- CT_014: Criar simulação com "valor" inválido (menor que RS$1000.00/maior que R$40000.00);
-- CT_015: Criar simulação com "parcela" inválido(menor que 2/maior que 48);
-- CT_016: Criar simulação com "seguro" inválido (sendo uma string ou integer);
+- CT_014: Criar simulação com "valor" inválido (menor que RS$1000.00)
+- CT_014: Criar simulação com "valor" inválido (maior que R$40000.00);
+- CT_015: Criar simulação com "parcela" inválido (menor que 2)
+- CT_015: Criar simulação com "parcela" inválido (maior que 48);
+- CT_016: Criar simulação com "seguro" inválido (sendo uma string ou integer); *
 - CT_016: Criar simulação com TODOS os campos preenchidos incorretamente;
 - CT_017: Alterar simulação com CPF existente (cadastrado);
 - CT_018: Alterar simulação com CPF inexistente (não cadastrado);
@@ -111,6 +112,8 @@
 - CT_025: Excluir simulação com ID existente (cadastrado);
 - CT_026: Excluir simulação com ID não existente (não cadastrado);
 - CT_027: Excluir simulação previamente excluída;
+
+### **Testes Candidatos à Automação**
 
 
 
