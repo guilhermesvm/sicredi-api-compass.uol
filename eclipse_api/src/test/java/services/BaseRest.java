@@ -58,13 +58,13 @@ public class BaseRest {
 				;
 		}
 	
-	public Response put(String endpoint, Object alteracao, String id) {
+	public Response put(String endpoint, Object alteracao, String cpf) {
 		return
 		given()
 			.body(alteracao)
-			.pathParam("id", id)
+			.pathParam("cpf", cpf)
 		.when()
-			.put(endpoint + "/" + "{id}")
+			.put(endpoint + "/" + "{cpf}")
 		.then()
 			.log().all()
 			.body(is(not(nullValue())))

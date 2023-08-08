@@ -25,5 +25,10 @@ public class Simulation {
 	
 	@JsonProperty(value = "id", access = Access.WRITE_ONLY )
 	private Integer id; //É lido apenas na desserialização
+	
+	
+	private String valorr;
+	private String parcelass;
+	private String seguroo;
 
 }
