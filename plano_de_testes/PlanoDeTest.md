@@ -84,34 +84,34 @@
 ###  **Casos de Teste**
 - CT_001: Listar simulações;
 - CT_002: Listar simulação por CPF existente;
-- CT_004: Listar simulação por CPF inexistente;
-- CT_005: Listar simulação por CPF fora dos padrões (menor ou maior que 11 dígitos);
-- CT_006: Listar simulação por CPF com caracteres inválidos (letra ou caracteres especiais);
+- CT_003: Listar simulação por CPF inexistente;
+- CT_004: Listar simulação por CPF fora dos padrões (menor que 11 dígitos);
+- CT_005: Listar simulação por CPF fora dos padrões (maior que 11 dígitos);
+- CT_006: Listar simulação por CPF com caracteres inválidos (letra e/ou caracteres especiais);
 - CT_007: Criar simulação com TODOS os campos preenchidos corretamente;
-- CT_008: Criar simulação com ALGUNS campos em branco;
-- CT_008: Criar simulação com "nome" e "cpf" em branco;
-- CT_009: Criar simulação com ALGUNS campos vazios;
-- CT_008: Criar simulação com "nome" e "cpf" vazios;
-- CT_010: Criar simulação utilizando caracteres inválidos (especiais) em ALGUNS os campos;
-- CT_010: Criar simulação com CPF inválido (string e com caracteres especiais);
-- CT_013: Criar simulação com "email" sem o '@', para verificar o padrão válido de email;
-- CT_014: Criar simulação com "valor" inválido (menor que RS$1000.00)
-- CT_014: Criar simulação com "valor" inválido (maior que R$40000.00);
-- CT_015: Criar simulação com "parcela" inválido (menor que 2)
-- CT_015: Criar simulação com "parcela" inválido (maior que 48);
-- CT_016: Criar simulação com "seguro" inválido (sendo uma string ou integer); *
-- CT_016: Criar simulação com TODOS os campos preenchidos incorretamente;
-- CT_017: Alterar simulação com CPF existente (cadastrado);
-- CT_018: Alterar simulação com CPF inexistente (não cadastrado);
-- CT_019: Alterar ALGUNS/TODOS os dados válidos por um campo em branco;
-- CT_020: Alterar ALGUNS/TODOS os dados válidos por um campo vazio;
-- CT_021: Alterar ALGUNS/TODOS os dados válidos por caracteres inválidos;
-- CT_022: Alterar email válido por um email sem '@';
-- CT_023: Alterar email válido por um email já utilizado;
-- CT_024: Alterar email válido por um email não existente;
-- CT_025: Excluir simulação com ID existente (cadastrado);
-- CT_026: Excluir simulação com ID não existente (não cadastrado);
-- CT_027: Excluir simulação previamente excluída;
+- CT_008: Criar simulação com TODOS campos em branco;
+- CT_009: Criar simulação com "nome" e "cpf" em branco;
+- CT_010: Criar simulação com "cpf" inválido;
+- CT_011: Criar simulação com TODOS campos vazios;
+- CT_012: Criar simulação com "nome" e "cpf" vazios;
+- CT_013: Criar simulação utilizando caracteres inválidos (especiais) em ALGUNS dos campos;
+- CT_014: Criar simulação com "email" sem o '@', para verificar o padrão válido de email;
+- CT_015: Criar simulação com "valor" inválido (menor que RS$1000.00)
+- CT_016: Criar simulação com "valor" inválido (maior que R$40000.00);
+- CT_017: Criar simulação com "parcela" inválido (menor que 2)
+- CT_018: Criar simulação com "parcela" inválido (maior que 48);
+- CT_019: Criar simulação com "seguro" inválido (sendo uma string ou integer); ***
+- CT_020: Criar simulação com TODOS os campos preenchidos incorretamente;
+- CT_021: Alterar simulação com CPF existente (cadastrado);
+- CT_022: Alterar simulação com CPF inexistente (não cadastrado);
+- CT_023: Alterar TODOS os dados válidos por um campo em branco;
+- CT_024: Alterar TODOS os dados válidos por um campo em vazios;
+- CT_025: Alterar ALGUNS dados válidos por caracteres inválidos;
+- CT_026: Alterar email válido por um email sem '@';
+- CT_027: Alterar email válido por um email já utilizado;
+- CT_028: Excluir simulação com ID existente (cadastrado);
+- CT_029: Excluir simulação com ID não existente (não cadastrado);
+- CT_030: Excluir simulação previamente excluída;
 
 ### **Testes Candidatos à Automação**
 
