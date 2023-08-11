@@ -92,6 +92,7 @@ Para executá-los e ver seus gráficos localmente, faça o download do repositó
 <div align="center">
     <p> Como um cliente da cooperativa de crédito Sicredi, gostaria de poder checar se meu CPF possui restrições ou não. </p>
 </div>
+
 ### **DoR e DoD**
 - DoR
     - Documentação acessível;
@@ -143,6 +144,7 @@ Para executá-los e ver seus gráficos localmente, faça o download do repositó
 <div align="center">
     <p> Como um cliente da cooperativa de crédito Sicredi, gostaria de poder criar simulações de crédito e empréstimos. </p>
 </div>
+
 ### **DoR e DoD**
 - **DoR**
     - Análise de testes cobrindo a rota de /Restricoes  
