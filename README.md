@@ -13,3 +13,6 @@ Olá! Este será um repositório dedicado para alocar o projeto de automação d
 # Challenge Final - API Simulação de Crédito Sicredi
 - [Branch Main](https://gitlab.com/guilhermesm/compass-challenge-final) - Projeto base; <br>
 - [Branch Dev](https://gitlab.com/guilhermesm/compass-challenge-final/-/tree/dev?ref_type=heads) - Commits e atualizações.
+
+##  Agradecimentos
+Gostaria de agradecer ao colega **Higor Milani**, o qual ajudou de uma forma mais constante na resolução do Challenge Final sobre melhora nas assertivas, clean code e resolução de vários bugs (dos mais simples até complexos). Aos demais colegas agradecer por terem tirado várias dúvidas durante Dailys e principalmente no grupo do WhatsApp.  Em suma, agradecer as mentorias Rafael e aulas do Jacques, e a Compass.Uol pela oportunidade de ter participado do Programa de Bolsas Compass.Uol - Automação de Testes em Java Backend.
