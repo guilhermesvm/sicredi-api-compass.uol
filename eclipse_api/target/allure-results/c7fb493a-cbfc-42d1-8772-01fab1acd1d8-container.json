@@ -1,0 +1,1 @@
+{"uuid":"c7fb493a-cbfc-42d1-8772-01fab1acd1d8","name":"naoAlterarTodosDadosValidosPorCampoEmBranco()","children":["644d4932-3fc6-4e68-993d-4b92dd1bf199"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691699615803,"stop":1691699615803}],"afters":[],"start":1691699615801,"stop":1691699615998}

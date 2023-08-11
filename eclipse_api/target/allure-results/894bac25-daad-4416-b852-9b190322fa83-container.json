@@ -1,0 +1,1 @@
+{"uuid":"894bac25-daad-4416-b852-9b190322fa83","name":"naoListarCPFInvalidoComLetra()","children":["84c9b3a6-36a9-4407-af0b-a18238c717b5"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691700693149,"stop":1691700693150}],"afters":[],"start":1691700693147,"stop":1691700693185}

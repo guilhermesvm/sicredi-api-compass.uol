@@ -1,0 +1,1 @@
+{"uuid":"5ba49637-4025-4d4e-b77e-53b7e8c802c6","name":"naoAlterarNomeECPFValidosPorCampoEmBranco_BUG()","children":["674d8e8c-0e6e-42f3-ba37-79d3799d89dc"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691699616142,"stop":1691699616142}],"afters":[],"start":1691699616138,"stop":1691699616232}

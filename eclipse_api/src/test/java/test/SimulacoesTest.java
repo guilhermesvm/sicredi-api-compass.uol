@@ -3,6 +3,7 @@ package test;
 import static constants.Endpoints.SIMULACOES;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static datafactory.TestVariables_Sim.*;
 
 import java.util.ArrayList;
 
@@ -11,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import com.github.javafaker.Faker;
 
 import datafactory.DynamicFactory;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import model.Simulation;
 import services.BaseTest;
@@ -45,6 +47,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("valor"), is(instanceOf(ArrayList.class)));
 		assertThat(response.path("parcelas"), is(instanceOf(ArrayList.class)));
 		assertThat(response.path("seguro"), is(instanceOf(ArrayList.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/get/200.json"));
 	}
 	
 	@Test
@@ -85,6 +88,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("valor"), is(instanceOf(Float.class)));
 		assertThat(response.path("parcelas"), is(instanceOf(Integer.class)));
 		assertThat(response.path("seguro"), is(instanceOf(Boolean.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/get_{cpf}/200.json"));
 		
 		//Deleta a simulação
 		rest.delete(SIMULACOES, id);
@@ -92,45 +96,46 @@ public class SimulacoesTest extends BaseTest{
 
 	@Test
 	public void naoListarSimulacaoPorCPF() {
-		String cpf = "12345678911";
-		Response response = rest.getCPF(SIMULACOES, cpf);
+		Response response = rest.getCPF(SIMULACOES, CPFValidoMasNaoExistenteNoBanco);
 		assertThat(response.statusCode(), is(404));
 		assertThat(response.asString(), containsString("mensagem"));
 		assertThat(response.path("mensagem"), is(not(nullValue())));
-		assertThat(response.path("mensagem"), is("CPF "+ cpf + " não encontrado"));
+		assertThat(response.path("mensagem"), is("CPF "+ CPFValidoMasNaoExistenteNoBanco + " não encontrado"));
 		assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/get_{cpf}/400.json"));
 	}
 	
 	@Test
 	public void naoListarSimulacaoPorCPFMaiorQueOPadrao() {
-		String cpf = "123451235344564563456";
-		Response response = rest.getCPF(SIMULACOES, cpf);
+		Response response = rest.getCPF(SIMULACOES, CPFMaiorQueOnze);
 		assertThat(response.statusCode(), is(404));
 		assertThat(response.asString(), containsString("mensagem"));
 		assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Impossível realizar busca com CPF fora do padrão."));
 		assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/get_{cpf}/400.json"));
 	}
 	
 	@Test
 	public void naoListarSimulacaoPorCPFMenorQueOPadrao() {
-		String cpf = "123";
-		Response response = rest.getCPF(SIMULACOES, cpf);
+		Response response = rest.getCPF(SIMULACOES, CPFMenorQueOnze);
 		assertThat(response.statusCode(), is(404));
 		assertThat(response.asString(), containsString("mensagem"));
 		assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Impossível realizar busca com CPF fora do padrão."));
 		assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/get_{cpf}/400.json"));
 	}
 	
 	@Test
-	public void naoListarSimulacaoPorCPFInvalido() {
-		Response response = rest.getCPF(SIMULACOES, "abcd123♬♬♬♬1324sadd♬");
+	public void naoListarSimulacaoPorCPFComCaracterEspecial() {
+		Response response = rest.getCPF(SIMULACOES, CPFComCaracterEspecial);
 		assertThat(response.statusCode(), is(404));
 		assertThat(response.asString(), containsString("mensagem"));
 		assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Impossível realizar busca com CPF inválido."));
 		assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/get_{cpf}/400.json"));
 	}
 	
 	@Test 
@@ -162,6 +167,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("valor"), is(instanceOf(Integer.class)));
 		assertThat(response.path("parcelas"), is(instanceOf(Integer.class)));
 		assertThat(response.path("seguro"), is(instanceOf(Boolean.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/200.json"));
 		
 		//Ajuda do Leo
 		Integer id = response.path("id");
@@ -190,6 +196,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros.email"), is(instanceOf(String.class)));
 		assertThat(response.path("erros.valor"), is(instanceOf(String.class)));
 		assertThat(response.path("erros.parcelas"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 		
 	}
 	
@@ -209,6 +216,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
 		//assertThat(response.path("erros.nome"), is("Nome deve ser um nome válido"));
 		//assertThat(response.path("erros.cpf"), is("CPF deve ser um CPF válido"));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 
 		
 		Integer id = response.path("id");
@@ -230,6 +238,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros"), is(not(nullValue())));
 		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
 		//assertThat(response.path("erros.cpf"), is("CPF deve ser um CPF válido"));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 		
 		Integer id = response.path("id");
 		simulation.setId(id);
@@ -250,6 +259,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.asString(), containsString("erros"));
 		assertThat(response.path("erros"), is(not(nullValue())));
 		assertThat(response.path("erros.email"), is(not(nullValue())));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 		
 		Integer id = response.path("id");
 		simulation.setId(id);
@@ -272,6 +282,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
 		//assertThat(response.path("erros.nome"), is("Nome deve ser um nome válido"));
 		//assertThat(response.path("erros.cpf"), is("CPF deve ser um CPF válido"));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 		
 		Integer id = response.path("id");
 		simulation.setId(id);
@@ -294,6 +305,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
 		//assertThat(response.path("erros.nome"), is("Nome deve ser um nome válido"));
 		//assertThat(response.path("erros.cpf"), is("CPF deve ser um CPF válido"));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 		
 		Integer id = response.path("id");
 		simulation.setId(id);
@@ -316,6 +328,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros.email"), is(not(nullValue())));
 		//assertThat(response.path("erros.email"), is("não é um endereço de e-mail"));
 		assertThat(response.path("erros.email"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400_1.json"));
 	}
 	
 	@Test 
@@ -333,6 +346,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros"), is(not(nullValue())));
 		//assertThat(response.path("erros.valor"), is(not(nullValue())));
 		//assertThat(response.path("erros.valor"), is("Valor deve ser maior ou igual a R$ 1.000"));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 		
 		Integer id = response.path("id");
 		simulation.setId(id);
@@ -355,6 +369,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros.valor"), is(not(nullValue())));
 		assertThat(response.path("erros.valor"), is("Valor deve ser menor ou igual a R$ 40.000"));
 		assertThat(response.path("erros.valor"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400_2.json"));
 	}
 
 	@Test 
@@ -373,6 +388,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros.parcelas"), is(not(nullValue())));
 		assertThat(response.path("erros.parcelas"), is("Parcelas deve ser igual ou maior que 2"));
 		assertThat(response.path("erros.parcelas"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400_3.json"));
 	}
 	
 	@Test 
@@ -390,6 +406,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros"), is(not(nullValue())));
 		//assertThat(response.path("erros.parcelas"), is(not(nullValue())));
 		//assertThat(response.path("erros.parcelas"), is("Parcelas deve ser igual ou menor que 48"));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400_3.json"));
 		
 		Integer id = response.path("id");
 		simulation.setId(id);
@@ -417,6 +434,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros.email"), is(instanceOf(String.class)));
 		assertThat(response.path("erros.valor"), is(instanceOf(String.class)));
 		assertThat(response.path("erros.parcelas"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/post/400.json"));
 	}
 	
 	@Test
@@ -442,6 +460,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Alteração realzada com sucesso."));
 		//assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/200.json"));
 		
 		//Deleta simulação
 		rest.delete(SIMULACOES, id);
@@ -449,7 +468,6 @@ public class SimulacoesTest extends BaseTest{
 	
 	@Test
 	public void naoAlterarSimulacaoInexistente( ) {
-		String cpf = "049128412904";
 		
 		alteracao.setNome(faker.name().fullName());
 		alteracao.setCpf(faker.number().digits(11).toString());
@@ -457,12 +475,13 @@ public class SimulacoesTest extends BaseTest{
 		alteracao.setValor(faker.random().nextInt(1000, 40000));
 		alteracao.setParcelas(faker.random().nextInt(2, 48));
 		alteracao.setSeguro(true); 
-		Response response = rest.put(SIMULACOES, alteracao, cpf);
+		Response response = rest.put(SIMULACOES, alteracao, CPFValidoMasNaoExistenteNoBanco);
 		assertThat(response.statusCode(), is(404));
 		assertThat(response.asString(), containsString("mensagem"));
 		assertThat(response.path("mensagem"), is(not(nullValue())));
-		assertThat(response.path("mensagem"), is("CPF "+ cpf + " não encontrado"));
+		assertThat(response.path("mensagem"), is("CPF "+ CPFValidoMasNaoExistenteNoBanco + " não encontrado"));
 		assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400.json"));
 	}
 	
 	@Test
@@ -485,11 +504,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros"), is(not(nullValue())));
 		assertThat(response.path("erros.email"), is(not(nullValue())));
 		assertThat(response.path("erros.email"), is(instanceOf(String.class)));
-		//assertThat(response.path("erros.nome"), is(not(nullValue())));
-		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
-		//assertThat(response.path("erros.valor"), is(not(nullValue())));
-		//assertThat(response.path("erros.parcelas"), is(not(nullValue())));
-		//assertThat(response.path("erros.seguro"), is(not(nullValue())));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400_1.json"));
 		
 		rest.delete(SIMULACOES, id);
 	}
@@ -515,6 +530,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros.email"), is(not(nullValue())));
 		//assertThat(response.path("erros.nome"), is(not(nullValue())));
 		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400_1.json"));
 	
 		rest.delete(SIMULACOES, id);
 	}
@@ -539,11 +555,8 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros"), is(not(nullValue())));
 		assertThat(response.path("erros.email"), is(not(nullValue())));
 		assertThat(response.path("erros.email"), is(instanceOf(String.class)));
-		//assertThat(response.path("erros.nome"), is(not(nullValue())));
-		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
-		//assertThat(response.path("erros.valor"), is(not(nullValue())));
-		//assertThat(response.path("erros.parcelas"), is(not(nullValue())));
-		//assertThat(response.path("erros.seguro"), is(not(nullValue())));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400_1.json"));
+	
 		
 		rest.delete(SIMULACOES, id);
 	}
@@ -568,6 +581,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("erros"), is(not(nullValue())));
 		//assertThat(response.path("erros.nome"), is(not(nullValue())));
 		//assertThat(response.path("erros.cpf"), is(not(nullValue())));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400_1.json"));
 		
 		rest.delete(SIMULACOES, id);
 	}
@@ -639,7 +653,8 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.statusCode(), is(400));
 		//assertThat(response.asString(), containsString("mensagem"));
 		//assertThat(response.path("mensagem"), is(not(nullValue())));
-		//assertThat(response.path("mensagem"), is("Registro excluído com sucesso."));	
+		//assertThat(response.path("mensagem"), is("Registro excluído com sucesso."));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400_1.json"));
 
 		
 		rest.delete(SIMULACOES, id);
@@ -668,6 +683,7 @@ public class SimulacoesTest extends BaseTest{
 		assertThat(response.path("erros.email"), is(not(nullValue())));
 		//assertThat(response.path("erros.email"), is("não é um endereço de e-mail"));
 		assertThat(response.path("erros.email"), is(instanceOf(String.class)));
+		assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/put_{cpf}/400_1.json"));
 		
 	}
 	@Test
@@ -683,6 +699,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Registro excluído com sucesso."));
 		//assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/delete}/200.json"));
 	}
 	
 	@Test
@@ -695,6 +712,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Nenhum registro excluído."));	
 		//assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/delete}/200.json"));
 	}
 	
 	@Test
@@ -713,6 +731,7 @@ public class SimulacoesTest extends BaseTest{
 		//assertThat(response.path("mensagem"), is(not(nullValue())));
 		//assertThat(response.path("mensagem"), is("Nenhum registro excluído."));
 		//assertThat(response.path("mensagem"), is(instanceOf(String.class)));
+		//assertThat(response.asString(), JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/simulacoes/delete}/200.json"));
 		
 	}
 }
