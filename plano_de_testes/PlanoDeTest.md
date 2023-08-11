@@ -23,8 +23,8 @@
         * [Testes Candidatos à Automação](#testes-candidatos-c3a0-automac3a7c3a3o-1)
    * [Local dos Testes](#5-local-dos-testes)
    * [Recursos Necessários](#6-recursos-necessários)
-   * [Cronograma](#9-cronograma)
-   * [Agradecimentos](#10-agradecimentos)
+   * [Cronograma](#7-cronograma)
+   
 
 <!--te-->
 
@@ -250,9 +250,3 @@ Todos os testes foram criados e testados localmente no meu computador pessoal pe
 | Planejamento       | 31/07/2023      | 04/08/2023
 | Execução           | 07/08/2023      | 10/08/2023       |
 | Avaliação          | 11/08/2023      | 11/08/2023       |
-
-mvn clean test -DexcludedGroups=bug
-disabled
-
-## 8. Agradecimentos
-Para finalizar, gostaria de agradecer ao colega **Higor Milani**, o qual ajudou de uma forma mais constante na resolução do Challenge Final sobre melhora nas assertivas, clean code e resolução de vários bugs (dos mais simples até complexos). Aos demais colegas agradecer por terem tirado várias dúvidas durante Dailys e principalmente no grupo do WhatsApp,  Em suma, agradecer a oportunidade de ter participado do Programa de Bolsas Compass.Uol - Automação de Testes em Javabackend, Rafael e Jacques pelas aulas e mentorias
