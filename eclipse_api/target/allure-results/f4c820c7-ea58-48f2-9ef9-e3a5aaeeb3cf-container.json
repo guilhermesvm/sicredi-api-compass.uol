@@ -1,0 +1,1 @@
+{"uuid":"f4c820c7-ea58-48f2-9ef9-e3a5aaeeb3cf","name":"FluxoCompletoAPISicredi","children":["82f63675-b00c-48eb-b44b-5bcba0a3d78e"],"befores":[{"name":"setupEnvironment","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691777338824,"stop":1691777338826}],"afters":[],"start":1691777338824,"stop":1691777339193}

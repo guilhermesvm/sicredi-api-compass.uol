@@ -11,7 +11,7 @@ public class DynamicFactory {
 
 	public static Simulation generateRandomSimulation(boolean possuiSeguro) {
 		simulation.setNome(faker.name().fullName());
-		simulation.setCpf(faker.number().digits(11).toString());
+		simulation.setCpf(faker.number().digits(11).toString()); //Ajuda do Matheus
 		simulation.setEmail(faker.internet().emailAddress());
 		simulation.setValor(faker.random().nextInt(1000, 40000));
 		simulation.setParcelas(faker.random().nextInt(2, 48));

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.SimulacoesTest
 -------------------------------------------------------------------------------
-Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.819 s - in test.SimulacoesTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.67 s - in test.SimulacoesTest

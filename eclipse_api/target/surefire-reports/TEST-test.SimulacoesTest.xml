@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.SimulacoesTest" time="5.819" tests="31" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.SimulacoesTest" time="4.67" tests="31" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest\target\test-classes;C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest\target\classes;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Usuário\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Usuário\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Usuário\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Usuário\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Usuário\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Usuário\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Usuário\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Usuário\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Usuário\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Usuário\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Usuário\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Usuário\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Usuário\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Usuário\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Usuário\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Usuário\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Usuário\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Usuário\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Usuário\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Usuário\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Usuário\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Usuário\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Usuário\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit5\2.18.1\allure-junit5-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit-platform\2.18.1\allure-junit-platform-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;"/>
+    <property name="java.class.path" value="C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB\target\test-classes;C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB\target\classes;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Usuário\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Usuário\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Usuário\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Usuário\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Usuário\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Usuário\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Usuário\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Usuário\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Usuário\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Usuário\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Usuário\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Usuário\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Usuário\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Usuário\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Usuário\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Usuário\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Usuário\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Usuário\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Usuário\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Usuário\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Usuário\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Usuário\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Usuário\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit5\2.18.1\allure-junit5-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit-platform\2.18.1\allure-junit-platform-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,11 +15,11 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="H:\Arquivos de Programas (x86)\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Usuário\AppData\Local\Temp\surefire18418283061911201611\surefirebooter-20230810173320083_3.jar C:\Users\Usuário\AppData\Local\Temp\surefire18418283061911201611 2023-08-10T17-33-19_498-jvmRun1 surefire-20230810173320083_1tmp surefire_0-20230810173320083_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Usuário\AppData\Local\Temp\surefire8030981316476722066\surefirebooter-20230811153827336_3.jar C:\Users\Usuário\AppData\Local\Temp\surefire8030981316476722066 2023-08-11T15-38-26_585-jvmRun1 surefire-20230811153827336_1tmp surefire_0-20230811153827336_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="test/**"/>
-    <property name="surefire.test.class.path" value="C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest\target\test-classes;C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest\target\classes;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Usuário\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Usuário\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Usuário\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Usuário\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Usuário\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Usuário\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Usuário\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Usuário\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Usuário\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Usuário\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Usuário\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Usuário\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Usuário\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Usuário\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Usuário\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Usuário\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Usuário\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Usuário\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Usuário\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Usuário\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Usuário\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Usuário\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Usuário\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit5\2.18.1\allure-junit5-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit-platform\2.18.1\allure-junit-platform-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;"/>
-    <property name="allure.results.directory" value="C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest\target/allure-results"/>
+    <property name="surefire.test.class.path" value="C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB\target\test-classes;C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB\target\classes;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Usuário\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Usuário\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Usuário\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Usuário\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Usuário\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Usuário\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Usuário\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Usuário\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Usuário\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Usuário\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Usuário\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Usuário\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Usuário\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Usuário\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Usuário\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Usuário\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Usuário\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Usuário\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Usuário\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Usuário\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Usuário\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Usuário\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Usuário\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Usuário\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Usuário\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Usuário\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Usuário\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Usuário\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Usuário\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Usuário\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Usuário\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit5\2.18.1\allure-junit5-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-junit-platform\2.18.1\allure-junit-platform-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-java-commons\2.18.1\allure-java-commons-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-model\2.18.1\allure-model-2.18.1.jar;C:\Users\Usuário\.m2\repository\io\qameta\allure\allure-test-filter\2.18.1\allure-test-filter-2.18.1.jar;C:\Users\Usuário\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Usuário\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB\target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Usuário"/>
     <property name="user.language" value="pt"/>
@@ -27,12 +27,12 @@
     <property name="java.version.date" value="2023-04-18"/>
     <property name="java.home" value="H:\Arquivos de Programas (x86)\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest"/>
+    <property name="basedir" value="C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Usuário\AppData\Local\Temp\surefire18418283061911201611\surefirebooter-20230810173320083_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuário\AppData\Local\Temp\surefire8030981316476722066\surefirebooter-20230811153827336_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
@@ -46,7 +46,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\USURIO~2\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.7"/>
-    <property name="user.dir" value="C:\Users\Usuário\Documents\Eclipse-Workspace\AlluraTest"/>
+    <property name="user.dir" value="C:\Users\Usuário\Documents\Eclipse-Workspace\ChallengeFinal_PB"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="env" value="local"/>
@@ -60,22 +60,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="naoListarSimulacaoPorCPFComCaracterEspecial" classname="test.SimulacoesTest" time="0.14">
+  <testcase name="naoListarSimulacaoPorCPFComCaracterEspecial" classname="test.SimulacoesTest" time="0.073">
     <system-out><![CDATA[HTTP/1.1 404 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:30 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 {
     "mensagem": "CPF ☢2349☢3423☢☢☢ não encontrado"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComTodosOsCamposEmBranco" classname="test.SimulacoesTest" time="0.684">
+  <testcase name="naoCriarSimulacaoComTodosOsCamposEmBranco" classname="test.SimulacoesTest" time="0.209">
     <system-out><![CDATA[HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 Connection: close
 
 {
@@ -87,91 +87,91 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComParcelaMaiorQue48_BUG" classname="test.SimulacoesTest" time="0.356">
+  <testcase name="naoCriarSimulacaoComParcelaMaiorQue48_BUG" classname="test.SimulacoesTest" time="0.08">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 {
-    "id": 150,
-    "nome": "Randee O'Kon IV",
-    "cpf": "28264591234",
-    "email": "alfonzo.lakin@yahoo.com",
-    "valor": 16688,
-    "parcelas": 63,
+    "id": 120,
+    "nome": "Art Dickinson",
+    "cpf": "78757854848",
+    "email": "ian.robel@gmail.com",
+    "valor": 30853,
+    "parcelas": 61,
     "seguro": false
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarEmailPorEmailJaExistente_BUG" classname="test.SimulacoesTest" time="0.346">
+  <testcase name="naoAlterarEmailPorEmailJaExistente_BUG" classname="test.SimulacoesTest" time="0.161">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 {
-    "id": 151,
-    "nome": "Rudolf VonRueden",
-    "cpf": "73076740139",
+    "id": 121,
+    "nome": "Eusebio Christiansen",
+    "cpf": "22227111701",
     "email": "joaozinho@qa.com",
-    "valor": 19750,
-    "parcelas": 41,
+    "valor": 2915,
+    "parcelas": 10,
     "seguro": true
 }
 HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 {
-    "id": 152,
-    "nome": "Ms. Shasta Cronin",
-    "cpf": "86804704697",
-    "email": "collin.grady@yahoo.com",
-    "valor": 18598,
-    "parcelas": 19,
+    "id": 122,
+    "nome": "Nestor Labadie",
+    "cpf": "83067600374",
+    "email": "lavada.hegmann@yahoo.com",
+    "valor": 4240,
+    "parcelas": 43,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 {
-    "id": 152,
-    "nome": "Mr. Cari Schamberger",
-    "cpf": "69614738364",
+    "id": 122,
+    "nome": "Miss Vanetta O'Hara",
+    "cpf": "38562442361",
     "email": "joaozinho@qa.com",
-    "valor": 18598.00,
-    "parcelas": 16,
+    "valor": 4240.00,
+    "parcelas": 28,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 OK
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComTodosCamposVazios" classname="test.SimulacoesTest" time="0.135">
+  <testcase name="naoCriarSimulacaoComTodosCamposVazios" classname="test.SimulacoesTest" time="0.122">
     <system-out><![CDATA[HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:31 GMT
+Date: Fri, 11 Aug 2023 18:38:54 GMT
 Connection: close
 
 {
@@ -181,25 +181,25 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarTodosDadosValidosPorCampoVazio" classname="test.SimulacoesTest" time="0.336">
+  <testcase name="naoAlterarTodosDadosValidosPorCampoVazio" classname="test.SimulacoesTest" time="0.39">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
-    "id": 154,
-    "nome": "Rochel Cormier V",
-    "cpf": "60775506707",
-    "email": "ute.oreilly@gmail.com",
-    "valor": 38238,
-    "parcelas": 3,
+    "id": 124,
+    "nome": "Laverne Lehner",
+    "cpf": "74576513309",
+    "email": "treena.heidenreich@gmail.com",
+    "valor": 27323,
+    "parcelas": 5,
     "seguro": true
 }
 HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 Connection: close
 
 {
@@ -210,172 +210,172 @@ Connection: close
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComCaracteresInvalidosEmAlgunsCampos_BUG" classname="test.SimulacoesTest" time="0.074">
+  <testcase name="naoCriarSimulacaoComCaracteresInvalidosEmAlgunsCampos_BUG" classname="test.SimulacoesTest" time="0.116">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
-    "id": 155,
+    "id": 125,
     "nome": "Eduardo Silv✂✂✂✂",
     "cpf": "423423✂✂✂✂✂",
     "email": "qa✂✂✂@gmail.com",
-    "valor": 8222,
+    "valor": 35887,
     "parcelas": 41,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarAlgunsDadosValidosPorCaracteresInvalidos_BUG" classname="test.SimulacoesTest" time="0.178">
+  <testcase name="naoAlterarAlgunsDadosValidosPorCaracteresInvalidos_BUG" classname="test.SimulacoesTest" time="0.11">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
-    "id": 156,
-    "nome": "Ferdinand Yundt",
-    "cpf": "09998361591",
-    "email": "gregory.moen@yahoo.com",
-    "valor": 8093,
-    "parcelas": 18,
+    "id": 126,
+    "nome": "Erasmo Heller",
+    "cpf": "86675944812",
+    "email": "cherise.hammes@hotmail.com",
+    "valor": 39047,
+    "parcelas": 17,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
-    "id": 156,
+    "id": 126,
     "nome": "✇",
     "cpf": "✇",
     "email": "joaoqa✇@gmail.com",
-    "valor": 8093.00,
-    "parcelas": 23,
+    "valor": 39047.00,
+    "parcelas": 35,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoListarSimulacaoPorCPFMaiorQueOPadrao" classname="test.SimulacoesTest" time="0.084">
+  <testcase name="naoListarSimulacaoPorCPFMaiorQueOPadrao" classname="test.SimulacoesTest" time="0.064">
     <system-out><![CDATA[HTTP/1.1 404 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
     "mensagem": "CPF 123451235344564563456 não encontrado"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComNomeCPFEmBranco_BUG" classname="test.SimulacoesTest" time="0.088">
+  <testcase name="naoCriarSimulacaoComNomeCPFEmBranco_BUG" classname="test.SimulacoesTest" time="0.056">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
-    "id": 157,
+    "id": 127,
     "nome": " ",
     "cpf": " ",
-    "email": "carina.larson@gmail.com",
-    "valor": 31757,
-    "parcelas": 17,
+    "email": "marylin.dickinson@hotmail.com",
+    "valor": 38247,
+    "parcelas": 9,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComCPFInvalido_BUG" classname="test.SimulacoesTest" time="0.07">
+  <testcase name="naoCriarSimulacaoComCPFInvalido_BUG" classname="test.SimulacoesTest" time="0.1">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 {
-    "id": 158,
-    "nome": "Joel Jones",
+    "id": 128,
+    "nome": "See Franecki",
     "cpf": "asdad2434sa34123",
-    "email": "petra.ankunding@hotmail.com",
-    "valor": 14607,
-    "parcelas": 16,
+    "email": "hunter.streich@yahoo.com",
+    "valor": 8143,
+    "parcelas": 6,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComTodosOsCamposPreenchidosIncorretamente" classname="test.SimulacoesTest" time="0.225">
+  <testcase name="naoCriarSimulacaoComTodosOsCamposPreenchidosIncorretamente" classname="test.SimulacoesTest" time="0.274">
     <system-out><![CDATA[HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:32 GMT
+Date: Fri, 11 Aug 2023 18:38:56 GMT
 Connection: close
 
 {
     "erros": {
         "parcelas": "Parcelas deve ser igual ou maior que 2",
         "valor": "Valor deve ser menor ou igual a R$ 40.000",
-        "email": "E-mail deve ser um e-mail válido"
+        "email": "não é um endereço de e-mail"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="criarSimulacao" classname="test.SimulacoesTest" time="0.327">
+  <testcase name="criarSimulacao" classname="test.SimulacoesTest" time="0.288">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:33 GMT
+Date: Fri, 11 Aug 2023 18:38:57 GMT
 
 {
-    "id": 160,
-    "nome": "Guillermo Effertz",
-    "cpf": "50046398394",
-    "email": "jean.carroll@gmail.com",
-    "valor": 13492,
-    "parcelas": 32,
+    "id": 130,
+    "nome": "Heike Tromp",
+    "cpf": "97700231424",
+    "email": "ashleigh.swaniawski@gmail.com",
+    "valor": 10892,
+    "parcelas": 38,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:33 GMT
+Date: Fri, 11 Aug 2023 18:38:57 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComParcelaMenorQue2" classname="test.SimulacoesTest" time="0.098">
+  <testcase name="naoCriarSimulacaoComParcelaMenorQue2" classname="test.SimulacoesTest" time="0.103">
     <system-out><![CDATA[HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:33 GMT
+Date: Fri, 11 Aug 2023 18:38:57 GMT
 Connection: close
 
 {
@@ -385,11 +385,11 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="listarSimulacoes" classname="test.SimulacoesTest" time="0.437">
+  <testcase name="listarSimulacoes" classname="test.SimulacoesTest" time="0.42">
     <system-out><![CDATA[HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:33 GMT
+Date: Fri, 11 Aug 2023 18:38:57 GMT
 
 [
     {
@@ -413,22 +413,22 @@ Date: Thu, 10 Aug 2023 20:33:33 GMT
 ]
 ]]></system-out>
   </testcase>
-  <testcase name="naoListarSimulacaoPorCPFMenorQueOPadrao" classname="test.SimulacoesTest" time="0.079">
+  <testcase name="naoListarSimulacaoPorCPFMenorQueOPadrao" classname="test.SimulacoesTest" time="0.059">
     <system-out><![CDATA[HTTP/1.1 404 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:33 GMT
+Date: Fri, 11 Aug 2023 18:38:57 GMT
 
 {
     "mensagem": "CPF 123 não encontrado"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComValorMaiorQue40000" classname="test.SimulacoesTest" time="0.113">
+  <testcase name="naoCriarSimulacaoComValorMaiorQue40000" classname="test.SimulacoesTest" time="0.165">
     <system-out><![CDATA[HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:33 GMT
+Date: Fri, 11 Aug 2023 18:38:57 GMT
 Connection: close
 
 {
@@ -438,59 +438,59 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComNomeCPFVazios_BUG" classname="test.SimulacoesTest" time="0.074">
+  <testcase name="naoCriarSimulacaoComNomeCPFVazios_BUG" classname="test.SimulacoesTest" time="0.079">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
-    "id": 163,
+    "id": 133,
     "nome": " ",
     "cpf": " ",
-    "email": "tori.barrows@yahoo.com",
-    "valor": 36526,
-    "parcelas": 48,
+    "email": "vince.torp@gmail.com",
+    "valor": 24589,
+    "parcelas": 11,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarSimulacaoInexistente" classname="test.SimulacoesTest" time="0.159">
+  <testcase name="naoAlterarSimulacaoInexistente" classname="test.SimulacoesTest" time="0.195">
     <system-out><![CDATA[HTTP/1.1 404 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
     "mensagem": "CPF 04912851086 não encontrado"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarEmailValidoPorOutroSemArroba" classname="test.SimulacoesTest" time="0.143">
+  <testcase name="naoAlterarEmailValidoPorOutroSemArroba" classname="test.SimulacoesTest" time="0.243">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
-    "id": 164,
-    "nome": "Ms. Jessie Zieme",
-    "cpf": "01067744583",
-    "email": "marlin.daugherty@gmail.com",
-    "valor": 25653,
-    "parcelas": 45,
+    "id": 134,
+    "nome": "Jacinda Reichel",
+    "cpf": "75463174286",
+    "email": "rory.jenkins@yahoo.com",
+    "valor": 22286,
+    "parcelas": 13,
     "seguro": true
 }
 HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 Connection: close
 
 {
@@ -500,293 +500,293 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="listarSimulacaoPorCPF" classname="test.SimulacoesTest" time="0.56">
+  <testcase name="listarSimulacaoPorCPF" classname="test.SimulacoesTest" time="0.351">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
-    "id": 165,
-    "nome": "Melodee MacGyver",
-    "cpf": "61338458543",
-    "email": "terry.kertzmann@hotmail.com",
-    "valor": 23462,
-    "parcelas": 7,
+    "id": 135,
+    "nome": "Miss Loralee Windler",
+    "cpf": "81286304060",
+    "email": "ronald.brown@yahoo.com",
+    "valor": 27703,
+    "parcelas": 5,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
-    "id": 165,
-    "nome": "Melodee MacGyver",
-    "cpf": "61338458543",
-    "email": "terry.kertzmann@hotmail.com",
-    "valor": 23462.00,
-    "parcelas": 7,
+    "id": 135,
+    "nome": "Miss Loralee Windler",
+    "cpf": "81286304060",
+    "email": "ronald.brown@yahoo.com",
+    "valor": 27703.00,
+    "parcelas": 5,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarTodosDadosValidosPorCampoEmBranco" classname="test.SimulacoesTest" time="0.197">
+  <testcase name="naoAlterarTodosDadosValidosPorCampoEmBranco" classname="test.SimulacoesTest" time="0.123">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:34 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
-    "id": 166,
-    "nome": "Marilu Runolfsson DDS",
-    "cpf": "36231014079",
-    "email": "jon.feest@yahoo.com",
-    "valor": 31748,
-    "parcelas": 15,
+    "id": 136,
+    "nome": "Dr. Jayme Erdman",
+    "cpf": "21864635252",
+    "email": "dewey.okon@hotmail.com",
+    "valor": 39563,
+    "parcelas": 25,
     "seguro": true
 }
 HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 Connection: close
 
 {
     "erros": {
-        "email": "não é um endereço de e-mail"
+        "email": "E-mail deve ser um e-mail válido"
     }
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComValorMenorQue1000_BUG" classname="test.SimulacoesTest" time="0.053">
+  <testcase name="naoCriarSimulacaoComValorMenorQue1000_BUG" classname="test.SimulacoesTest" time="0.054">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:58 GMT
 
 {
-    "id": 167,
-    "nome": "Lon Gutmann MD",
-    "cpf": "92553318439",
-    "email": "chance.kuvalis@yahoo.com",
-    "valor": 759,
-    "parcelas": 17,
+    "id": 137,
+    "nome": "Emerita Johns",
+    "cpf": "85565071385",
+    "email": "yuko.sipes@yahoo.com",
+    "valor": 968,
+    "parcelas": 37,
     "seguro": false
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoListarSimulacaoPorCPF" classname="test.SimulacoesTest" time="0.079">
+  <testcase name="naoListarSimulacaoPorCPF" classname="test.SimulacoesTest" time="0.096">
     <system-out><![CDATA[HTTP/1.1 404 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 {
     "mensagem": "CPF 04912851086 não encontrado"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarNomeECPFValidosPorCampoEmBranco_BUG" classname="test.SimulacoesTest" time="0.095">
+  <testcase name="naoAlterarNomeECPFValidosPorCampoEmBranco_BUG" classname="test.SimulacoesTest" time="0.108">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 {
-    "id": 168,
-    "nome": "Mr. Jeffery Doyle",
-    "cpf": "59153824740",
-    "email": "dreama.weimann@hotmail.com",
-    "valor": 15030,
-    "parcelas": 18,
-    "seguro": true
-}
-HTTP/1.1 200 
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
-
-{
-    "id": 168,
-    "nome": " ",
-    "cpf": " ",
-    "email": "rowena.hoeger@hotmail.com",
-    "valor": 15030.00,
-    "parcelas": 10,
-    "seguro": true
-}
-HTTP/1.1 200 
-Content-Type: application/json;charset=UTF-8
-Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
-
-OK
-]]></system-out>
-  </testcase>
-  <testcase name="excluirSimulacaoNaoExistente" classname="test.SimulacoesTest" time="0.027">
-    <system-out><![CDATA[HTTP/1.1 200 
-Content-Type: application/json;charset=UTF-8
-Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
-
-OK
-]]></system-out>
-  </testcase>
-  <testcase name="alterarSimulacao" classname="test.SimulacoesTest" time="0.121">
-    <system-out><![CDATA[HTTP/1.1 201 
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
-
-{
-    "id": 169,
-    "nome": "Alonso Hilll",
-    "cpf": "04141630488",
-    "email": "neoma.wiza@gmail.com",
-    "valor": 8253,
-    "parcelas": 2,
-    "seguro": true
-}
-HTTP/1.1 200 
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
-
-{
-    "id": 169,
-    "nome": "Aubrey Waelchi",
-    "cpf": "21674126002",
-    "email": "maxima.spencer@yahoo.com",
-    "valor": 8253.00,
+    "id": 138,
+    "nome": "Stewart Rohan",
+    "cpf": "56257066532",
+    "email": "ambrose.white@hotmail.com",
+    "valor": 32724,
     "parcelas": 16,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
-Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
-
-OK
-]]></system-out>
-  </testcase>
-  <testcase name="excluirSimulacao" classname="test.SimulacoesTest" time="0.082">
-    <system-out><![CDATA[HTTP/1.1 201 
-Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 {
-    "id": 170,
-    "nome": "Lizzette Spencer",
-    "cpf": "93834681928",
-    "email": "ed.predovic@gmail.com",
-    "valor": 22840,
-    "parcelas": 9,
+    "id": 138,
+    "nome": " ",
+    "cpf": " ",
+    "email": "harriet.hickle@yahoo.com",
+    "valor": 32724.00,
+    "parcelas": 40,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoCriarSimulacaoComEmailSemArroba" classname="test.SimulacoesTest" time="0.09">
+  <testcase name="excluirSimulacaoNaoExistente" classname="test.SimulacoesTest" time="0.017">
+    <system-out><![CDATA[HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Date: Fri, 11 Aug 2023 18:38:59 GMT
+
+OK
+]]></system-out>
+  </testcase>
+  <testcase name="alterarSimulacao" classname="test.SimulacoesTest" time="0.103">
+    <system-out><![CDATA[HTTP/1.1 201 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 11 Aug 2023 18:38:59 GMT
+
+{
+    "id": 139,
+    "nome": "Tera Conn",
+    "cpf": "01177747338",
+    "email": "meghann.ankunding@yahoo.com",
+    "valor": 3114,
+    "parcelas": 37,
+    "seguro": true
+}
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 11 Aug 2023 18:38:59 GMT
+
+{
+    "id": 139,
+    "nome": "Clarita Stiedemann",
+    "cpf": "84562372369",
+    "email": "usha.kuhn@gmail.com",
+    "valor": 3114.00,
+    "parcelas": 39,
+    "seguro": true
+}
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Date: Fri, 11 Aug 2023 18:38:59 GMT
+
+OK
+]]></system-out>
+  </testcase>
+  <testcase name="excluirSimulacao" classname="test.SimulacoesTest" time="0.067">
+    <system-out><![CDATA[HTTP/1.1 201 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 11 Aug 2023 18:38:59 GMT
+
+{
+    "id": 140,
+    "nome": "Adella Kilback",
+    "cpf": "91608512552",
+    "email": "gavin.schmeler@hotmail.com",
+    "valor": 32281,
+    "parcelas": 44,
+    "seguro": true
+}
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Content-Length: 2
+Date: Fri, 11 Aug 2023 18:38:59 GMT
+
+OK
+]]></system-out>
+  </testcase>
+  <testcase name="naoCriarSimulacaoComEmailSemArroba" classname="test.SimulacoesTest" time="0.102">
     <system-out><![CDATA[HTTP/1.1 400 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 Connection: close
 
 {
     "erros": {
-        "email": "não é um endereço de e-mail"
+        "email": "E-mail deve ser um e-mail válido"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="excluirSimulacaoJaExcluida" classname="test.SimulacoesTest" time="0.086">
+  <testcase name="excluirSimulacaoJaExcluida" classname="test.SimulacoesTest" time="0.091">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 {
-    "id": 172,
-    "nome": "Francis Pfannerstill",
-    "cpf": "74325198783",
-    "email": "sage.ondricka@gmail.com",
-    "valor": 37060,
-    "parcelas": 9,
+    "id": 142,
+    "nome": "Alvera Denesik",
+    "cpf": "06459614379",
+    "email": "helen.kuhlman@yahoo.com",
+    "valor": 39524,
+    "parcelas": 34,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 OK
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 OK
 ]]></system-out>
   </testcase>
-  <testcase name="naoAlterarNomeECPFValidosPorCampoVazio_BUG" classname="test.SimulacoesTest" time="0.078">
+  <testcase name="naoAlterarNomeECPFValidosPorCampoVazio_BUG" classname="test.SimulacoesTest" time="0.168">
     <system-out><![CDATA[HTTP/1.1 201 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 {
-    "id": 173,
-    "nome": "Gerry Runolfsdottir V",
-    "cpf": "84423321016",
-    "email": "laurel.moen@hotmail.com",
-    "valor": 4151,
-    "parcelas": 12,
+    "id": 143,
+    "nome": "Morgan Kshlerin",
+    "cpf": "38147547028",
+    "email": "margarito.walter@gmail.com",
+    "valor": 16868,
+    "parcelas": 3,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 {
-    "id": 173,
+    "id": 143,
     "nome": "",
     "cpf": "",
-    "email": "lizabeth.abshire@yahoo.com",
-    "valor": 4151.00,
-    "parcelas": 45,
+    "email": "roselia.jerde@hotmail.com",
+    "valor": 16868.00,
+    "parcelas": 21,
     "seguro": true
 }
 HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Content-Length: 2
-Date: Thu, 10 Aug 2023 20:33:35 GMT
+Date: Fri, 11 Aug 2023 18:38:59 GMT
 
 OK
 ]]></system-out>

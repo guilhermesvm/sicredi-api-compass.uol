@@ -1,0 +1,1 @@
+{"uuid":"f04312d0-e9e1-4624-9d1f-b283da73dcfc","name":"naoAlterarEmailValidoPorOutroSemArroba()","children":["6c0d8874-b5c7-4fb5-b564-e09e41ee8a56"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691777335744,"stop":1691777335744}],"afters":[],"start":1691777335742,"stop":1691777335974}

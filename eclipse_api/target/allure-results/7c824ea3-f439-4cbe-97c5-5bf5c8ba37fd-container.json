@@ -1,0 +1,1 @@
+{"uuid":"7c824ea3-f439-4cbe-97c5-5bf5c8ba37fd","name":"naoListarSimulacaoPorCPFMenorQueOPadrao()","children":["4fcbe3f9-329f-4dd5-b3c9-c5bc0bc59509"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691777342332,"stop":1691777342332}],"afters":[],"start":1691777342330,"stop":1691777342387}
