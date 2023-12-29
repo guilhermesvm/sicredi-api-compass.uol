@@ -1,0 +1,1 @@
+{"uuid":"e6782548-0781-4284-a334-898fac146e1b","name":"naoCriarSimulacaoComNomeCPFVazios_BUG()","children":["43890a63-9529-43c2-846a-e2ee2f5d2fee"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691699614840,"stop":1691699614840}],"afters":[],"start":1691699614838,"stop":1691699614912}
