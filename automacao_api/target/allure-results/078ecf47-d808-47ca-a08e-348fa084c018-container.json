@@ -1,1 +1,0 @@
-{"uuid":"078ecf47-d808-47ca-a08e-348fa084c018","name":"naoAlterarNomeECPFValidosPorCampoEmBranco_BUG()","children":["8cf8f618-8a17-4cad-b8d5-7d94d63ed6b8"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691779139297,"stop":1691779139297}],"afters":[],"start":1691779139295,"stop":1691779139404}

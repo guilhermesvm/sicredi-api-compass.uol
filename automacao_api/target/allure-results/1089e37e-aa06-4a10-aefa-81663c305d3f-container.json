@@ -1,1 +1,0 @@
-{"uuid":"1089e37e-aa06-4a10-aefa-81663c305d3f","name":"naoListarCPFNaFormaPadraoMasInvalido()","children":["a39c9bbc-44c4-4f7f-ad73-8f4b549ff9f6"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691779125571,"stop":1691779125571}],"afters":[],"start":1691779125567,"stop":1691779125622}
