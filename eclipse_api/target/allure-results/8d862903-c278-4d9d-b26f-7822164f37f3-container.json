@@ -1,1 +1,0 @@
-{"uuid":"8d862903-c278-4d9d-b26f-7822164f37f3","name":"naoCriarSimulacaoComALGUNSCamposVazios()","children":["c0e553bb-7a96-4625-b342-0f823b7e8a63"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691777333614,"stop":1691777333614}],"afters":[],"start":1691777333612,"stop":1691777333752}

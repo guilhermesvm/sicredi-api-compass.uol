@@ -1,1 +1,0 @@
-{"uuid":"70cb0e0f-aa73-483b-9fc9-0786fa39e840","name":"fluxoFelizCompleto()","children":["82f63675-b00c-48eb-b44b-5bcba0a3d78e"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691777338834,"stop":1691777338834}],"afters":[],"start":1691777338827,"stop":1691777339190}

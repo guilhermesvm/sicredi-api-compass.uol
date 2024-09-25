@@ -1,1 +1,0 @@
-{"uuid":"725b6562-eb2d-417f-a1f1-1371898ff57f","name":"naoListarCPFNaoExistenteNoBancoDeDados()","children":["0340431f-6976-4dd5-b94e-5aca8dac0520"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691699337758,"stop":1691699337758}],"afters":[],"start":1691699337756,"stop":1691699337804}

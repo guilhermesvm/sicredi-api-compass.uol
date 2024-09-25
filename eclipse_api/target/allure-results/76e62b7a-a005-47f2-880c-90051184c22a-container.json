@@ -1,1 +1,0 @@
-{"uuid":"76e62b7a-a005-47f2-880c-90051184c22a","name":"listarCPFSemRestricao()","children":["c86495ca-e42a-4b85-ab1b-aa4bf0614c55"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691700693094,"stop":1691700693094}],"afters":[],"start":1691700693091,"stop":1691700693143}

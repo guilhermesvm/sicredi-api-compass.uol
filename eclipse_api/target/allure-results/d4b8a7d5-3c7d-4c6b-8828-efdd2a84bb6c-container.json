@@ -1,1 +1,0 @@
-{"uuid":"d4b8a7d5-3c7d-4c6b-8828-efdd2a84bb6c","name":"naoCriarSimulacaoComEmailSemArroba()","children":["0118ef1f-4f2d-4fef-a78a-85ff13a87f04"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691699616472,"stop":1691699616472}],"afters":[],"start":1691699616471,"stop":1691699616561}

@@ -1,1 +1,0 @@
-{"uuid":"6e3bab65-007a-4008-b79b-60e8972a6f02","name":"naoAlterarCPFValidoPorOutroInvalidoMenorQue11_BUG()","children":["a7ab3550-f737-4444-9db7-7b2e49675bb8"],"befores":[{"name":"initializeService","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691777335979,"stop":1691777335979}],"afters":[],"start":1691777335977,"stop":1691777336098}
